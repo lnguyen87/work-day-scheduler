@@ -9,18 +9,28 @@ console.log(currentTime);
 
 
 var $text9 = $("#text9");
-console.log(text9);
-text9.textContent = "testing";
+var $text10 = $("#text10");
+var $text11 = $("#text11");
+var $text12 = $("#text12");
+var $text13 = $("#text13");
+var $text14 = $("#text14");
+var $text15 = $("#text15");
+var $text16 = $("#text16");
+var $text17 = $("#text17");
+text10.textContent = "testing";
 
 
 
 // check if current time is passed 9am-5pm
 $("textarea").each(function() {
     var name = parseInt($(this).attr("name"));
+    // styles past time to grey
     if (name < currentTime) {
         $(this).addClass("past");
+    // styles current time to red
     } else if (name === currentTime) {
-        $(this).addClass("current");
+        $(this).addClass("present");
+    // styles future time to green
     } else {
         $(this).addClass("future");
     }
