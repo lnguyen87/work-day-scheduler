@@ -36,11 +36,18 @@ $("textarea").each(function() {
     }
 });
 
-
-// $(".saveBtn").on("click", function() {
-//     var userTask = $(this).siblings("textarea").hour();
-//     var timeblockHour
-// })
+// when save button clicked, data stored to local storage
+$(".saveBtn").on("click", function() {
+    localStorage.setItem("9AM", JSON.stringify($text9.val()));
+    localStorage.setItem("10AM", JSON.stringify($text10.val()));
+    localStorage.setItem("11AM", JSON.stringify($text11.val()));
+    localStorage.setItem("12PM", JSON.stringify($text12.val()));
+    localStorage.setItem("1PM", JSON.stringify($text13.val()));
+    localStorage.setItem("2PM", JSON.stringify($text14.val()));
+    localStorage.setItem("3PM", JSON.stringify($text15.val()));
+    localStorage.setItem("4PM", JSON.stringify($text16.val()));
+    localStorage.setItem("5PM", JSON.stringify($text17.val()));
+})
 
 // function loadTimeblock () {
 //     $("#9").val(localStorage.getItem("9"));
