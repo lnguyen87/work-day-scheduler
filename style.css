@@ -66,8 +66,12 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  background-color: #0696b6;
+  background-image: linear-gradient(180deg, #0667b6 0%, #0696b6 50%, #00fafa 100%);
 }
+
+
 
