@@ -26,6 +26,8 @@ https://getbootstrap.com/docs/4.3/utilities/spacing/
 
 https://stackoverflow.com/questions/40791207/setting-and-getting-localstorage-with-jquery
 
+https://developer.mozilla.org/en-US/docs/Web/API/Storage/clear
+
 jQuery Crash Course youtube videos by Brad Traversy
 https://www.youtube.com/playlist?list=PLillGF-RfqbYJVXBgZ_nA7FTAAEpp_IAc
 
