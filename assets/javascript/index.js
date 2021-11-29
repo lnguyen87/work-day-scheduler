@@ -53,10 +53,16 @@ function displaySchedule() {
     $("#text10").val(localStorage.getItem("10AM"));
     $("#text11").val(localStorage.getItem("11AM"));
     $("#text12").val(localStorage.getItem("12PM"));
-    $("#text13").val(localStorage.getItem("1M"));
+    $("#text13").val(localStorage.getItem("1PM"));
     $("#text14").val(localStorage.getItem("2PM"));
     $("#text15").val(localStorage.getItem("3PM"));
     $("#text16").val(localStorage.getItem("4PM"));
     $("#text17").val(localStorage.getItem("5PM"));
 }
 displaySchedule();
+
+// clears local storage when clear schedule button clicked
+$(".resetBtn").on("click", function() {
+    localStorage.clear();
+    $("textarea").val("");
+});
